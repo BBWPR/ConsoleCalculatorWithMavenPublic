@@ -1,0 +1,15 @@
+# examples
+# Thumbs.db
+# *.bak
+# bin/
+
+#eclipse
+.classpath
+.project
+.settings/
+target/
+
+#intellij
+.idea/
+*.iml
+
