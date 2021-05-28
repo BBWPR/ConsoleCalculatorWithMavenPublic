@@ -1,2 +1,10 @@
 language: java
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: ERsmhpFjka4JqtNdMH1dygRFeEJ3buaYXlGgo/Zax0YV/G70nMw63FVO11h7DmldbIovb75jXAnsUi61w63rGktj/NmBQzJSGXSd8Vi6TKKsna41UNLc7A3L12WXxo8pgCneVwisnZNH8pwAF5nV/9fE85g8/fKm0wOMb+ggs+WAJGnmH4oLyfUQ7c0MRqcoLsOHOEn5HcZClKxaSX5lyZEJfmItmR9gpxRn0i2RR0/SPkttf+bo/zuj7QnjVbQ4pLhKqbrpSIcbsnjOcmQpylZkk3G8f2dGywtwV6H+lopOw/PTIYbh16sxRfDcvjV4EmhKa9U9g/uFwsrwLxGx3jzITlBaKyzx/WuztCiK0gmGRT/pz2xii/b8ggqQu9sLEd6HO9ytr2C8AvMfUMTg8je514vEDUgCw8swbhH1W/DQJ1oUAdYn2Olh4f3kV7qLMtBe0y2EK/sFlX2w61be01doyTbumtKVDwD16yGUQQ28TBargWS+LTy2HGSMh1mPSBQX2KDkMbv+ry8egfo2hKxUVOEgrVWRNbcHe3CMeX6HBpi3RnNp7+FekvWQSr9f68AvIilv1NohVgTDiV39CBSk/KQv7A3M0JYrEY+qEvtqentZWAaco+EUsqh1ZAECgAY8I9C/SqUsetrqjIG34GKMvgD11LTDzWNy/Aqi8LY=
+  file: "/home/travis/.m2/repository/ch/bbw/02_02_ConsoleCalculatorWithMavenPublic/0.0.1-SNAPSHOT/02_02_ConsoleCalculatorWithMavenPublic-0.0.1-SNAPSHOT.jar"
+  skip_cleanup: true
+  on:
+    tags: true
