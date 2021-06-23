@@ -1,7 +1,7 @@
 package ch.bbw.consolecalculator;
 
 /**
- * Console Calculator App
+ * Console Calculator Application
  * @author Peter Rutschmann
  * @version 0.0.1
  */
